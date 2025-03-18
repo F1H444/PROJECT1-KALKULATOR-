@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KALKULATOR</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+
+    <div class="flex-grup">
+
+        
+        <div class="calculator">
+            <div class="output">
+        <input type="text" readonly id="output"/>
+      </div>
+      
+      <div class="keys">
+        <button class="operator" onclick="clearOutput()">AC</button>
+        <button class="operator" onclick="clearOutput()">C</button>
+        <button class="operator" onclick="toOutput('.')">.</button>
+        <button class="operator" onclick="toOutput('/')">/</button>
+        <button onclick="toOutput('7')">7</button>
+        <button onclick="toOutput('8')">8</button>
+        <button onclick="toOutput('9')">9</button>
+        <button class="operator" onclick="toOutput('*')">x</button>
+        <button onclick="toOutput('4')">4</button>
+        <button onclick="toOutput('5')">5</button>
+        <button onclick="toOutput('6')">6</button>
+        <button class="operator" onclick="toOutput('-')">-</button>
+        <button onclick="toOutput('1')">1</button>
+        <button onclick="toOutput('2')">2</button>
+        <button onclick="toOutput('3')">3</button>
+        <button class="operator" onclick="toOutput('+')">+</button>
+        <button class="operator" onclick="toOutput('-')">+/-</button>
+        <button onclick="toOutput('00')">00</button>
+        <button onclick="toOutput('0')">0</button>
+        <button class="operator" onclick="calculate()">=</button>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
